@@ -30,7 +30,7 @@
                     <a class="nav-link active" aria-current="page" href="Index.html">Início</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Anunciar Vagas</a>
+                    <a class="nav-link" href="Anunciar%20Vagas.html">Anunciar Vagas</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -77,39 +77,51 @@
     </div>
 </nav>
 
-<footer class="bg-dark text-white py-4">
-    <div class="container">
-        <div class="row">
+<div class="b-example-divider"></div>
 
-            <div class="col-md-4 mb-3">
-                <h5>Sobre Nós</h5>
-                <p>Somos estudantes do ensino médio e o site "trampo livre" é um projeto </p>
+<div class="modal modal-sheet position-static d-block bg-body-secondary p-4 py-md-5" tabindex="-1" role="dialog" id="modalSignin">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content rounded-4 shadow">
+            <div class="modal-header p-5 pb-4 border-bottom-0">
+                <h1 class="fw-bold mb-0 fs-2">Sign up for free</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
 
-            <div class="col-md-4 mb-3">
-                <h5>Links Rápidos</h5>
-                <ul class="list-unstyled">
-                    <li><a href="Recursos.html" class="text-white">Sobre Nós</a></li>
-                    <li><a href="Empregos.html" class="text-white">Buscar Vagas</a></li>
-                    <li><a href="Anunciar%20Vagas.html" class="text-white">Anunciar Vagas</a></li>
-                    <li><a href="Contatos.html" class="text-white">Contato</a></li>
-                </ul>
-            </div>
-
-            <div class="col-md-4 mb-3">
-                <h5>Redes Sociais</h5>
-                <a href="#" class="btn btn-outline-light btn-sm mr-2"><i class="fab fa-facebook-f"></i> Facebook</a>
-                <a href="#" class="btn btn-outline-light btn-sm mr-2"><i class="fab fa-twitter"></i> Twitter</a>
-                <a href="#" class="btn btn-outline-light btn-sm"><i class="fab fa-linkedin-in"></i> Istagram</a>
-            </div>
-        </div>
-        <div class="row mt-3">
-            <div class="col-md-12 text-center">
-                <p>&copy; 2024 Trampo Livre. Todos os direitos reservados.</p>
+            <div class="modal-body p-5 pt-0">
+                <form class="">
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Email</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Senha</label>
+                    </div>
+                    <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Entrar</button>
+                    <small class="text-body-secondary">CLicando em entrar,você concorda cpm os termos de uso</small>
+                    <hr class="my-4">
+                    <h2 class="fs-5 fw-bold mb-3">Entre por outro meio</h2>
+                    <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+                        <svg class="bi me-1" width="16" height="16"><use xlink:href="#twitter"/></svg>
+                        Entre pelo twitter
+                    </button>
+                    <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+                        <svg class="bi me-1" width="16" height="16"><use xlink:href="#facebook"/></svg>
+                        Entre pelo Facebook
+                    </button>
+                    <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+                        <svg class="bi me-1" width="16" height="16"><use xlink:href="#github"/></svg>
+                        Entre pelo GitHub
+                    </button>
+                </form>
             </div>
         </div>
     </div>
-</footer>
+</div>
+
+<div class="b-example-divider"></div>
+<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
 
 </body>
 </html>
