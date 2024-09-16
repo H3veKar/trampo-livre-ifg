@@ -1,0 +1,129 @@
+
+body, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+/* Estilização do título principal */
+h1.display-3 {
+    font-size: 3rem;
+    color: #1a3371;
+    margin-bottom: 20px;
+}
+
+/* Estilização dos subtítulos e parágrafos */
+h4 {
+    font-size: 1.5rem;
+    color: #343a40;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+
+
+/* Estilização das cards */
+.card {
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+/* Estilização do navbar vertical */
+#navbarVertical {
+    border-radius: 8px;
+    background-color: #f8f9fa;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #007bff;
+    color: white;
+}
+p{
+    font-size: 20px;
+}
+
+/* Estilização das seções de depoimentos */
+blockquote {
+    border-left: 5px solid #007bff;
+    padding-left: 15px;
+    font-style: italic;
+}
+
+.blockquote-footer {
+    font-size: 0.875rem;
+    color: #6c757d;
+}
+
+/* Adiciona padding e margens para diferentes seções */
+.mt-5 {
+    margin-top: 3rem !important;
+}
+
+.mt-3 {
+    margin-top: 1.5rem !important;
+}
+
+.mt-2 {
+    margin-top: 1rem !important;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem !important;
+}
+
+.mb-0 {
+    margin-bottom: 0 !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
