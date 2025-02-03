@@ -75,61 +75,110 @@
         </div>
     </div>
 </nav>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br> <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br> <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br> <br>
-<br>
-<br>
-<br>
-<br>
-<br> <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br> <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br> <br>
-<br>
-<br>
-<br>
-<br>
+
+
+
+<style>
+    div1{
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .form-container1 {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 600px;
+    }
+
+    h1 {
+        text-align: center;
+        color: #333;
+    }
+
+    label {
+        font-weight: bold;
+        margin-bottom: 5px;
+        display: block;
+        color: #333;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+
+    button {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 12px;
+        font-size: 16px;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    button:hover {
+        background-color: #45a049;
+    }
+</style>
+
+<div1>
+    <div class="form-container1">
+        <h1>Formulário de Contratante</h1>
+
+        <form action="#" method="POST">
+
+            <label for="contratante-nome">Nome Completo:</label>
+            <input type="text" id="contratante-nome" name="contratante-nome" required>
+
+            <label for="contratante-email">Email:</label>
+            <input type="email" id="contratante-email" name="contratante-email" required>
+
+            <label for="contratante-telefone">Telefone de Contato:</label>
+            <input type="tel" id="contratante-telefone" name="contratante-telefone">
+
+            <label for="contratante-empresa">Empresa/Local de Trabalho:</label>
+            <input type="text" id="contratante-empresa" name="contratante-empresa" required>
+
+            <label for="contratante-localizacao">Localização (Cidade, Estado):</label>
+            <input type="text" id="contratante-localizacao" name="contratante-localizacao" required>
+
+            <label for="contratante-pagamento">Forma de Pagamento:</label>
+            <select id="contratante-pagamento" name="contratante-pagamento" required>
+                <option value="pix">Pix</option>
+                <option value="boleto">Boleto Bancário</option>
+                <option value="transferencia">Transferência Bancária</option>
+            </select>
+
+            <button type="submit">Enviar Proposta</button>
+        </form>
+    </div>
+</div1>
+
+
+
+
+
+
 
 
 
