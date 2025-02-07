@@ -127,3 +127,27 @@ blockquote {
 .text-center {
     text-align: center !important;
 }
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    color: #007bff;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.btn-success {
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+}
