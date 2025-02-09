@@ -30,7 +30,7 @@
                     <a class="nav-link active" aria-current="page" href="Index.html">Início</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Anunciar Vagas</a>
+                    <a class="nav-link" href="Anunciar%20Vagas.html">Anunciar Vagas</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -76,29 +76,98 @@
         </div>
     </div>
 </nav>
-<div class="row">
-<center>
-    <div class="col-9" >
-        <div data-spy="scroll" data-target="#navbarVertical" data-set="0">
 
-            <h4 id="item1">Informações de contato</h4>
-            <p>
-                Trampo Livre
-
-                Endereço: Rua das Oportunidades, 123, Centro, Luziânia, GO, Brasil<br>
-                Telefone: +55 (61) 1234-5678<br>
-                Email: suporte@trampolivre.com.br <br>
-                Site: www.trampolivre.com.br <br>
-                Horário de Funcionamento: Segunda a Sexta, das 9h às 18h <br>
-            </p>
-
-
+<br><br>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div data-spy="scroll" data-target="#navbarVertical" data-set="0">
+                <h4 id="item1" class="text-center text-primary mb-4">Informações de Contato</h4>
+                <div class="contact-details">
+                    <p>
+                        <strong>Trampo Livre</strong><br>
+                        <strong>Endereço:</strong> Rua das Oportunidades, 123, Centro, blablabla, GO, Brasil<br>
+                        <strong>Telefone:</strong> +55 (61) 1234-5678<br>
+                        <strong>Email:</strong> <a href="mailto:suporte@trampolivre.com.br">suporte@trampolivre.com.br</a><br>
+                        <strong>Site:</strong> <a href="http://www.trampolivre.com.br" target="_blank">www.trampolivre.com.br</a><br>
+                        <strong>Horário de Funcionamento:</strong> Segunda a Sexta, das 9h às 18h<br>
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
-</center>
-
-
 </div>
+
+
+
+<style>
+
+    html, body {
+        height: 100%;
+        margin: 0;
+    }
+
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+    }
+
+    .row {
+        flex-grow: 1;
+    }
+
+    .contact-details {
+        background-color: #f0f8ff;
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+        font-size: 1.2rem;
+    }
+
+    .contact-details p {
+        font-size: 1.3rem;
+    }
+
+    .contact-details a {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+    .contact-details a:hover {
+        text-decoration: underline;
+    }
+
+    h4 {
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: #004085;
+    }
+
+
+    footer {
+        background-color: #f1f1f1;
+        padding: 20px 0;
+        position: relative;
+        width: 100%;
+        margin-top: auto;
+    }
+
+    .footer p {
+        margin: 0;
+        font-size: 1rem;
+    }
+</style>
+
+
+
+
+
+
+
+
 
 <footer class="bg-dark text-white py-4">
     <div class="container">
