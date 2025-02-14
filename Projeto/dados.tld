@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<usuarios>
+    <usuario>
+        <id>1</id>
+        <nome>João Silva</nome>
+        <email>joao@example.com</email>
+        <tipo>anunciador</tipo>
+    </usuario>
+    <usuario>
+        <id>2</id>
+        <nome>Ana Souza</nome>
+        <email>ana@example.com</email>
+        <tipo>procurador</tipo>
+    </usuario>
+</usuarios>

@@ -1,0 +1,30 @@
+<body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Doe Brasil</a>
+  </div>
+</nav>
+
+<div class="container mt-5">
+  <h1 class="text-center mb-4">Cadastro de Usuário</h1>
+  <form id="cadastroForm" action="/api/cadastro" method="POST" class="mx-auto" style="max-width: 400px;">
+    <div class="mb-3">
+      <input type="text" class="form-control" name="nome" placeholder="Nome" required>
+    </div>
+    <div class="mb-3">
+      <input type="email" class="form-control" name="email" placeholder="Email" required>
+    </div>
+    <div class="mb-3">
+      <input type="password" class="form-control" name="senha" placeholder="Senha" required>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Tipo de Usuário:</label>
+      <select class="form-select" name="tipo" required>
+        <option value="anunciador">Anunciador</option>
+        <option value="procurador">Procurador de Vagas</option>
+      </select>
+    </div>
+    <button type="submit" class="btn btn-primary w-100">Cadastrar</button>
+  </form>
+</div>
+</body>

@@ -15,6 +15,48 @@
 
 <nav class="navbar navbar-expand-lg bg-body-tertiary navbar bg-dark border-bottom border-body" data-bs-theme="dark">
 
+
+
+    <div id="usuarios"></div>
+
+    <script>
+        // Carregar e mostrar o arquivo XML no HTML
+        var xmlDoc;
+        var usuariosDiv = document.getElementById("usuarios");
+
+        // Função para carregar XML
+        function loadXML() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    xmlDoc = this.responseXML;
+                    displayUsuarios();
+                }
+            };
+            xhttp.open("GET", "dados.xml", true);
+            xhttp.send();
+        }
+
+        // Função para exibir os dados
+        function displayUsuarios() {
+            var usuarios = xmlDoc.getElementsByTagName("usuario");
+            var htmlContent = "<ul>";
+
+            for (var i = 0; i < usuarios.length; i++) {
+                var nome = usuarios[i].getElementsByTagName("nome")[0].childNodes[0].nodeValue;
+                var email = usuarios[i].getElementsByTagName("email")[0].childNodes[0].nodeValue;
+                var tipo = usuarios[i].getElementsByTagName("tipo")[0].childNodes[0].nodeValue;
+                htmlContent += "<li><strong>" + nome + "</strong> (" + tipo + ") - " + email + "</li>";
+            }
+
+            htmlContent += "</ul>";
+            usuariosDiv.innerHTML = htmlContent;
+        }
+
+        // Chamar a função para carregar o XML
+        loadXML();
+    </script>
+
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"

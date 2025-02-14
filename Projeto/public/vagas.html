@@ -1,0 +1,57 @@
+<body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Doe Brasil</a>
+  </div>
+</nav>
+
+<div class="container mt-5">
+  <h1 class="text-center mb-4">Gerenciamento de Vagas</h1>
+  <form id="vagaForm" class="mx-auto" style="max-width: 600px;">
+    <div class="mb-3">
+      <input type="text" class="form-control" id="titulo" placeholder="Título da Vaga" required>
+    </div>
+    <div class="mb-3">
+      <textarea class="form-control" id="descricao" placeholder="Descrição" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary w-100">Salvar Vaga</button>
+  </form>
+
+  <h2 class="mt-5">Vagas Cadastradas</h2>
+  <ul id="listaVagas" class="list-group mt-3"></ul>
+</div>
+
+<script>
+  const listaVagas = document.getElementById('listaVagas');
+
+  // Carregar Vagas
+  fetch('/api/vagas')
+          .then(res => res.json())
+          .then(vagas => {
+            vagas.forEach(vaga => {
+              const li = document.createElement('li');
+              li.className = "list-group-item";
+              li.innerHTML = `<strong>${vaga.titulo}</strong> - ${vaga.descricao}`;
+              listaVagas.appendChild(li);
+            });
+          });
+
+  // Adicionar Nova Vaga
+  document.getElementById('vagaForm').addEventListener('submit', (e) => {
+    e.preventDefault();
+    const titulo = document.getElementById('titulo').value;
+    const descricao = document.getElementById('descricao').value;
+
+    fetch('/api/vagas', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ titulo, descricao })
+    }).then(() => {
+      alert('Vaga cadastrada com sucesso!');
+      window.location.reload();
+    });
+  });
+</script>
+</body>

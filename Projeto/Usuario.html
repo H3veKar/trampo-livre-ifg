@@ -64,8 +64,8 @@
                             Usuário
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="Usuario.html">Ver Perfil</a></li>
-                            <li><a class="dropdown-item" href="#">Sair</a></li>
+                            <li><a href="cadastro.html" class="btn btn-primary">Cadastrar</a> </li>
+                            <li><a href="login.html" class="btn btn-primary">Login</a></li>
 
 
                         </ul>
@@ -79,45 +79,36 @@
 
 <div class="b-example-divider"></div>
 
-<div class="modal modal-sheet position-static d-block bg-body-secondary p-4 py-md-5" tabindex="-1" role="dialog" id="modalSignin">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content rounded-4 shadow">
-            <div class="modal-header p-5 pb-4 border-bottom-0">
-                <h1 class="fw-bold mb-0 fs-2">Sign up for free</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-
-            <div class="modal-body p-5 pt-0">
-                <form class="">
-                    <div class="form-floating mb-3">
-                        <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput">Email</label>
-                    </div>
-                    <div class="form-floating mb-3">
-                        <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
-                        <label for="floatingPassword">Senha</label>
-                    </div>
-                    <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Entrar</button>
-                    <small class="text-body-secondary">CLicando em entrar,você concorda cpm os termos de uso</small>
-                    <hr class="my-4">
-                    <h2 class="fs-5 fw-bold mb-3">Entre por outro meio</h2>
-                    <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
-                        <svg class="bi me-1" width="16" height="16"><use xlink:href="#twitter"/></svg>
-                        Entre pelo twitter
-                    </button>
-                    <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
-                        <svg class="bi me-1" width="16" height="16"><use xlink:href="#facebook"/></svg>
-                        Entre pelo Facebook
-                    </button>
-                    <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
-                        <svg class="bi me-1" width="16" height="16"><use xlink:href="#github"/></svg>
-                        Entre pelo GitHub
-                    </button>
-                </form>
-            </div>
-        </div>
+<body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Trampo Livre</a>
     </div>
+</nav>
+
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Cadastro de Usuário</h1>
+    <form id="cadastroForm" action="/api/cadastro" method="POST" class="mx-auto" style="max-width: 400px;">
+        <div class="mb-3">
+            <input type="text" class="form-control" name="nome" placeholder="Nome" required>
+        </div>
+        <div class="mb-3">
+            <input type="email" class="form-control" name="email" placeholder="Email" required>
+        </div>
+        <div class="mb-3">
+            <input type="password" class="form-control" name="senha" placeholder="Senha" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Tipo de Usuário:</label>
+            <select class="form-select" name="tipo" required>
+                <option value="anunciador">Anunciador</option>
+                <option value="procurador">Procurador de Vagas</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Cadastrar</button>
+    </form>
 </div>
+</body>
 
 <div class="b-example-divider"></div>
 <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
