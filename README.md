@@ -1,6 +1,6 @@
 #  Trampo Livre
 
-**Trampo Livre** é uma plataforma web de intermediação entre contratantes e freelancers/prestadores de serviço, criada como **Trabalho de Conclusão de Curso (TCC)** do curso Técnico integrado ao Ensino Médio do **IFG (Instituto Federal de Goiás)**.
+**Trampo Livre** é uma plataforma web de intermediação entre contratantes e freelancers/prestadores de serviço, criada como **Trabalho final** do curso Técnico integrado ao Ensino Médio do **IFG (Instituto Federal de Goiás)**.
 
 O projeto reúne, em um único site, os principais conhecimentos desenvolvidos ao longo dos 3 anos de curso: HTML, CSS, JavaScript, Node.js/Express e manipulação de dados no back-end.
 
